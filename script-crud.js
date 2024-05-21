@@ -5,6 +5,8 @@ const ulTarefas = document.querySelector('.app__section-task-list');
 const descricaoTarefa = document.querySelector('.app__section-active-task-description');
 const removerConcluidasBt = document.getElementById('btn-remover-concluidas');
 const removerTodasBt = document.getElementById('btn-remover-todas');
+const cancelarBt = document.querySelector('.app__form-footer__button--cancel');
+const deletarBt = document.querySelector('.app__form-footer__button--delete');
 
 let tarefas = JSON.parse(localStorage.getItem('tarefas')) || [];
 
@@ -119,3 +121,12 @@ const removerTarefas = (somenteCompletas) => {
 
 removerConcluidasBt.onclick = () => removerTarefas(true);
 removerTodasBt.onclick = () => removerTarefas(false);
+
+cancelarBt.onclick = () => {
+    textarea.value = '';
+};
+
+deletarBt.onclick = () => {
+    textarea.value = '';
+    formAdicionarTarefa.classList.add('hidden');
+}

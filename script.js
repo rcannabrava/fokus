@@ -17,7 +17,7 @@ const tempoFinalizado = new Audio ('sons/beep.mp3');
 
 const timer = document.getElementById('timer');
 
-let tempoDecorridoEmSegundos = 1500;
+let tempoDecorridoEmSegundos = 1800;
 let intervaloId = null;
 
 musica.loop = true;
