@@ -31,7 +31,7 @@ musicaFoco.addEventListener('change', () => {
 })
 
 focoBt.addEventListener('click', () => {
-    tempoDecorridoEmSegundos = 1800;
+    tempoDecorridoEmSegundos = 1;
     alterarContexto('foco');
     titulo.innerHTML = `Otimize sua produtividade,<br><strong class="app__title-strong">mergulhe no que importa.</strong>`;
     focoBt.classList.add('active');
