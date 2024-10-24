@@ -3,8 +3,10 @@ const formAdicionarTarefa = document.querySelector('.app__form-add-task');
 const textarea = document.querySelector('.app__form-textarea');
 const ulTarefas = document.querySelector('.app__section-task-list');
 const descricaoTarefa = document.querySelector('.app__section-active-task-description');
-const removerConcluidasBt = document.getElementById('btn-remover-concluidas');
-const removerTodasBt = document.getElementById('btn-remover-todas');
+
+const removerConcluidasBt = document.querySelector('#btn-remover-concluidas');
+const removerTodasBt = document.querySelector('#btn-remover-todas');
+
 const cancelarBt = document.querySelector('.app__form-footer__button--cancel');
 const deletarBt = document.querySelector('.app__form-footer__button--delete');
 
